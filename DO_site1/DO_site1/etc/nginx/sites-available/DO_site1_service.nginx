@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name 209.182.252.127/site1/;
+    server_name 142.93.19.27/site1/;
     server_tokens off;
 
     charset utf-8;

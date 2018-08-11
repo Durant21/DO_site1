@@ -44,9 +44,9 @@ python3 setup.py develop
 
 cp /var/www/html/site1/DO_site1/DO_site1/DO_site1/etc/init/DO_site1_svc.service /etc/systemd/system/
 
-systemctl start auto_svc
-systemctl enable auto_svc
-systemctl status auto_svc
+systemctl start DO_site1_svc
+systemctl enable DO_site1_svc
+systemctl status DO_site1_svc
 
 
 # CAREFUL HERE. If you are using default, maybe skip this
