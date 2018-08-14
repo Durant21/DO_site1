@@ -53,7 +53,7 @@ systemctl status DO_site1_svc
 rm /etc/nginx/sites-enabled/default
 
 cp /webapps/site1/DO_site1/DO_site1/DO_site1/etc/nginx/sites-available/DO_site1_service.nginx /etc/nginx/sites-available/
-
+cp /webapps/site1/DO_site1/DO_site1/DO_site1/etc/nginx/sites-available/DO_site1_service.nginx /etc/nginx/sites-enabled/
 update-rc.d nginx enable
 
 service nginx start
