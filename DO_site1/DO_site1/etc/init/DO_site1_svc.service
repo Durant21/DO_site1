@@ -5,7 +5,7 @@ After=syslog.target
 [Service]
 ExecStart=/usr/local/bin/uwsgi --ini-paste /webapps/site1/DO_site1/DO_site1/production.ini
 # Requires systemd version 211 or newer
-RuntimeDirectory=/var/www/html/site1/DO_site1/DO_site1/
+RuntimeDirectory=/webapps/site1/DO_site1/DO_site1/
 Restart=always
 KillSignal=SIGQUIT
 Type=notify

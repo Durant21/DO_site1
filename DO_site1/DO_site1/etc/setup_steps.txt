@@ -42,7 +42,7 @@ cd /var/www/html/site1/DO_site1/DO_site1/
 python3 setup.py develop
 
 
-cp /var/www/html/site1/DO_site1/DO_site1/DO_site1/etc/init/DO_site1_svc.service /etc/systemd/system/
+cp /webapps/site1/DO_site1/DO_site1/DO_site1/etc/init/DO_site1_svc.service /etc/systemd/system/
 
 systemctl start DO_site1_svc
 systemctl enable DO_site1_svc
@@ -52,7 +52,7 @@ systemctl status DO_site1_svc
 # CAREFUL HERE. If you are using default, maybe skip this
 rm /etc/nginx/sites-enabled/default
 
-cp /var/www/html/site1/DO_site1/DO_site1/DO_site1/etc/nginx/sites-available/DO_site1_service.nginx /etc/nginx/sites-available/
+cp /webapps/site1/DO_site1/DO_site1/DO_site1/etc/nginx/sites-available/DO_site1_service.nginx /etc/nginx/sites-available/
 
 update-rc.d nginx enable
 
