@@ -3,7 +3,7 @@ Description=uWSGI DO_site1 server instance
 After=syslog.target
 
 [Service]
-ExecStart=/usr/local/bin/uwsgi --ini-paste /var/www/html/site1/DO_site1/DO_site1/production.ini
+ExecStart=/usr/local/bin/uwsgi --ini-paste /webapps/site1/DO_site1/DO_site1/production.ini
 # Requires systemd version 211 or newer
 RuntimeDirectory=/var/www/html/site1/DO_site1/DO_site1/
 Restart=always
